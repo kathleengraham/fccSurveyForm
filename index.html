@@ -13,54 +13,80 @@
     <main id="main">
         
         <h1 id="title">Code Noobs Survey</h1>
-        <p id="description">Help us learn more about those learning to code with us!</p>
+        <p id="description">Help us get to know our learners!</p>
         
         <form id="survey-form">
 
-            <div id="name-div">
-                <label id="name-label" for="name-label">Name: </label>
-                <input id="name" type="text" placeholder="name" required>
+            <!-- ------------------- SECTION ONE -------------------- -->
+            <div id="section-one">
+                <div id="name-div">
+                    <label id="name-label" for="name-label">Name: </label>
+                    <br>
+                    <input id="name" type="text" placeholder="name" required>
+                </div>
+                
+                <div id="email-div">
+                    <label id="email-label" for="email-label">Email: </label>
+                    <br>
+                    <input id="email" type="email" placeholder="email" required>
+                </div>
+                
+                <div id="age-div">
+                    <label id="number-label" for="number-label">Age: (optional)</label>
+                    <br>
+                    <input id="number" type="number" placeholder="age" min="10" max="110">
+                </div>
             </div>
             
-            <div id="email-div">
-                <label id="email-label" for="email-label">Email: </label>
-                <input id="email" type="email" placeholder="email" required>
-            </div>
-            
-            <div id="age-div">
-                <label id="number-label" for="number-label">Age: (optional)</label>
-                <input id="number" type="number" placeholder="age" min="10" max="110">
-            </div>
-            
-            <div id="dropdown">
-                <label for="cars">Favorite coding language: </label>
-                <select id="coding-languages">
-                <option value="python">Python</option>
-                <option value="javascript">JavaScript</option>
-                <option value="java">Java</option>
-                <option value="csharp">C#</option>
-                </select>
+            <!-- ------------------- SECTION TWO -------------------- -->
+            <div id="section-two">
+                <ul id="radio-div">Learner level:
+                    <li>
+                        <label for="radio"><input type="radio" name="radio" value="1"> Beginner</label>
+                    </li>
+                    <li>
+                        <label for="radio"><input type="radio" name="radio" value="2"> Intermediate</label>
+                    </li>
+                    <li>
+                        <label for="radio"><input type="radio" name="radio" value="3"> Advanced</label>
+                    </li>
+                </ul>
+
+                <ul id="checkbox-div">Favorite resources:
+                    <li>
+                        <label for="checkbox"><input type="checkbox" name="checkbox" value="1"> freeCodeCamp</label>
+                    </li>
+                    <li>
+                        <label for="checkbox"><input type="checkbox" name="checkbox" value="2"> Udemy/Udacity</label>
+                    </li>
+                    <li>
+                        <label for="checkbox"><input type="checkbox" name="checkbox" value="3"> Coursera/EdX</label>
+                    </li>
+                </ul>
+
+                <div id="dropdown">
+                    <label for="cars">Favorite coding language: </label>
+                    <br>
+                    <select id="coding-languages">
+                        <option value="select">Select one</option>
+                        <option value="python">Python</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="java">Java</option>
+                        <option value="csharp">C#</option>
+                    </select>
+                </div>
             </div>
 
-            <div id="radio-div">
-                <label for="radio"><input type="radio" name="radio" value="1"> Option 1</label>
-                <label for="radio"><input type="radio" name="radio" value="2"> Option 2</label>
-                <label for="radio"><input type="radio" name="radio" value="3"> Option 3</label>
-            </div>
+            <!-- ------------------- SECTION THREE -------------------- -->
+            <div id="section-three">
+                <div id="text-area-div">
+                    <p>Additional Comments:</p>
+                    <textarea></textarea>
+                </div>
 
-            <div id="checkbox-div">
-                <label for="checkbox"><input type="checkbox" name="checkbox" value="1"> Option 1</label>
-                <label for="checkbox"><input type="checkbox" name="checkbox" value="2"> Option 2</label>
-                <label for="checkbox"><input type="checkbox" name="checkbox" value="3"> Option 3</label>
-            </div>
-            
-            <div id="text-area-div">
-                <p>Additional Comments:</p>
-                <textarea></textarea>
-            </div>
-
-            <div id="submit-div">
-                <button id="submit" type="submit" value="submit">SUBMIT</button>
+                <div id="submit-div">
+                    <button id="submit" type="submit" value="submit">SUBMIT</button>
+                </div>
             </div>
 
         </form>
