@@ -11,87 +11,95 @@
 <body>
     
     <main id="main">
-        
-        <h1 id="title">Code Noobs Survey</h1>
-        <p id="description">Help us get to know our learners!</p>
+        <div id="title-div">
+            <h1 id="title">Code Noobs Survey</h1>
+            <p id="description">Help us get to know our learners!</p>
+        </div>
         
         <form id="survey-form">
-                <div id="name-div">
-                    <label id="name-label" for="name-label">Name: </label>
-                    <br>
-                    <input id="name" type="text" placeholder="name" required>
-                </div>
-                
-                <div id="email-div">
-                    <label id="email-label" for="email-label">Email: </label>
-                    <br>
-                    <input id="email" type="email" placeholder="email" required>
-                </div>
-                
-                <div id="age-div">
-                    <label id="number-label" for="number-label">Age: (optional)</label>
-                    <br>
-                    <input id="number" type="number" placeholder="age" min="10" max="110">
-                </div>
-                <div id="radio-div">
-                    <ul>Learner level:
-                        <li>
-                            <label for="radio"><input type="radio" name="radio" value="beginner"> Beginner</label>
-                        </li>
-                        <li>
-                            <label for="radio"><input type="radio" name="radio" value="intermediate"> Intermediate</label>
-                        </li>
-                        <li>
-                            <label for="radio"><input type="radio" name="radio" value="advanced"> Advanced</label>
-                        </li>
-                    </ul>
-                </div>
-                <div id="checkbox-div">
-                    <ul>Favorite resources:
-                        <li>
-                            <label for="checkbox"><input type="checkbox" name="checkbox" value="freeCodeCamp"> freeCodeCamp</label>
-                        </li>
-                        <li>
-                            <label for="checkbox"><input type="checkbox" name="checkbox" value="udemy"> Udemy</label>
-                        </li>
-                        <li>
-                            <label for="checkbox"><input type="checkbox" name="checkbox" value="udacity"> Udacity</label>
-                        </li>
-                        <li>
-                            <label for="checkbox"><input type="checkbox" name="checkbox" value="coursera"> Coursera</label>
-                        </li>
-                        <li>
-                            <label for="checkbox"><input type="checkbox" name="checkbox" value="edx"> EdX</label>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="dropdown">
-                    <label for="cars">Favorite coding language: </label>
-                    <br>
-                    <select id="coding-languages">
-                        <option value="select">Select one</option>
-                        <option value="python">Python</option>
-                        <option value="javascript">JavaScript</option>
-                        <option value="java">Java</option>
-                        <option value="cplusplus">C++</option>
-                        <option value="csharp">C#</option>
-                        <option value="r">R</option>
-                        <option value="ruby">Ruby</option>
-                    </select>
-                </div>
+            
+            <!-- div 1 -->
+            <div id="name-div">
+                <label id="name-label" for="name-label">Name: </label>
+                <br>
+                <input class="textbox" id="name" type="text" placeholder="name" required>
             </div>
 
-            <!-- ------------------- SECTION THREE -------------------- -->
-            <div id="section-three">
-                <div id="text-area-div">
-                    <p>Additional Comments:</p>
-                    <textarea></textarea>
-                </div>
+            <!-- div 2 -->
+            <div id="email-div">
+                <label id="email-label" for="email-label">Email: </label>
+                <br>
+                <input class="textbox" id="email" type="email" placeholder="email" required>
+            </div>
 
-                <div id="submit-div">
-                    <button id="submit" type="submit" value="submit">SUBMIT</button>
-                </div>
+            <!-- div 3 -->          
+            <div id="age-div">
+                <label id="number-label" for="number-label">Age: (optional)</label>
+                <br>
+                <input class="textbox" id="number" type="number" placeholder="age" min="10" max="110">
+            </div>
+
+            <!-- div 4 -->
+            <div id="radio-div">
+                <ul>Learner level:
+                    <li>
+                        <label for="radio"><input type="radio" name="radio" value="beginner"> Beginner</label>
+                    </li>
+                    <li>
+                        <label for="radio"><input type="radio" name="radio" value="intermediate"> Intermediate</label>
+                    </li>
+                    <li>
+                        <label for="radio"><input type="radio" name="radio" value="advanced"> Advanced</label>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- div 5 -->
+            <div id="checkbox-div">
+                <ul>Favorite resources:
+                    <li>
+                        <label for="checkbox"><input type="checkbox" name="checkbox" value="freeCodeCamp"> freeCodeCamp</label>
+                    </li>
+                    <li>
+                        <label for="checkbox"><input type="checkbox" name="checkbox" value="udemy"> Udemy</label>
+                    </li>
+                    <li>
+                        <label for="checkbox"><input type="checkbox" name="checkbox" value="udacity"> Udacity</label>
+                    </li>
+                    <li>
+                        <label for="checkbox"><input type="checkbox" name="checkbox" value="coursera"> Coursera</label>
+                    </li>
+                    <li>
+                        <label for="checkbox"><input type="checkbox" name="checkbox" value="edx"> EdX</label>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- div 6 -->
+            <div id="dropdown">
+                <label for="cars">Favorite coding language: </label>
+                <br>
+                <select id="coding-languages">
+                    <option value="select">Select one</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="cplusplus">C++</option>
+                    <option value="csharp">C#</option>
+                    <option value="r">R</option>
+                    <option value="ruby">Ruby</option>
+                </select>
+            </div>
+
+            <!-- div 7 -->
+            <div id="text-area-div">
+                <p>Additional Comments:</p>
+                <textarea class="textbox"></textarea>
+            </div>
+
+            <!-- div 8 -->
+            <div id="submit-div">
+                <button id="submit" type="submit" value="submit">SUBMIT</button>
             </div>
 
         </form>
