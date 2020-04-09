@@ -16,9 +16,6 @@
         <p id="description">Help us get to know our learners!</p>
         
         <form id="survey-form">
-
-            <!-- ------------------- SECTION ONE -------------------- -->
-            <div id="section-one">
                 <div id="name-div">
                     <label id="name-label" for="name-label">Name: </label>
                     <br>
@@ -36,33 +33,38 @@
                     <br>
                     <input id="number" type="number" placeholder="age" min="10" max="110">
                 </div>
-            </div>
-            
-            <!-- ------------------- SECTION TWO -------------------- -->
-            <div id="section-two">
-                <ul id="radio-div">Learner level:
-                    <li>
-                        <label for="radio"><input type="radio" name="radio" value="1"> Beginner</label>
-                    </li>
-                    <li>
-                        <label for="radio"><input type="radio" name="radio" value="2"> Intermediate</label>
-                    </li>
-                    <li>
-                        <label for="radio"><input type="radio" name="radio" value="3"> Advanced</label>
-                    </li>
-                </ul>
-
-                <ul id="checkbox-div">Favorite resources:
-                    <li>
-                        <label for="checkbox"><input type="checkbox" name="checkbox" value="1"> freeCodeCamp</label>
-                    </li>
-                    <li>
-                        <label for="checkbox"><input type="checkbox" name="checkbox" value="2"> Udemy/Udacity</label>
-                    </li>
-                    <li>
-                        <label for="checkbox"><input type="checkbox" name="checkbox" value="3"> Coursera/EdX</label>
-                    </li>
-                </ul>
+                <div id="radio-div">
+                    <ul>Learner level:
+                        <li>
+                            <label for="radio"><input type="radio" name="radio" value="beginner"> Beginner</label>
+                        </li>
+                        <li>
+                            <label for="radio"><input type="radio" name="radio" value="intermediate"> Intermediate</label>
+                        </li>
+                        <li>
+                            <label for="radio"><input type="radio" name="radio" value="advanced"> Advanced</label>
+                        </li>
+                    </ul>
+                </div>
+                <div id="checkbox-div">
+                    <ul>Favorite resources:
+                        <li>
+                            <label for="checkbox"><input type="checkbox" name="checkbox" value="freeCodeCamp"> freeCodeCamp</label>
+                        </li>
+                        <li>
+                            <label for="checkbox"><input type="checkbox" name="checkbox" value="udemy"> Udemy</label>
+                        </li>
+                        <li>
+                            <label for="checkbox"><input type="checkbox" name="checkbox" value="udacity"> Udacity</label>
+                        </li>
+                        <li>
+                            <label for="checkbox"><input type="checkbox" name="checkbox" value="coursera"> Coursera</label>
+                        </li>
+                        <li>
+                            <label for="checkbox"><input type="checkbox" name="checkbox" value="edx"> EdX</label>
+                        </li>
+                    </ul>
+                </div>
 
                 <div id="dropdown">
                     <label for="cars">Favorite coding language: </label>
@@ -72,7 +74,10 @@
                         <option value="python">Python</option>
                         <option value="javascript">JavaScript</option>
                         <option value="java">Java</option>
+                        <option value="cplusplus">C++</option>
                         <option value="csharp">C#</option>
+                        <option value="r">R</option>
+                        <option value="ruby">Ruby</option>
                     </select>
                 </div>
             </div>
